@@ -1,0 +1,41 @@
+
+body {
+    background-color: #8ea0ca;
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_item{
+    margin: 5px;
+}
+
+.skip {
+    background-color: #fae478;
+    left: 0;
+    top: -50px;
+    position: absolute;
+}
+
+a.skip:focus{
+    top: 0;
+    color: #2e343B;
+    text-decoration-style: solid;
+    padding: 2px;
+    position: relative;
+}
