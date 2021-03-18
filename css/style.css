@@ -84,7 +84,7 @@ a.skip:focus{
     background-color: #fae478;
     text-align: center;
     width: 100%;
-    position: sticky;
+    position: absolute;
     padding-top: 1%;
     bottom: 0;
 }
