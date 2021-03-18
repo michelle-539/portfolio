@@ -13,29 +13,25 @@ body {
     background-color:#c7dcff;
     display: flex;
     flex-direction: column;
-    align-content: center;
 }
 
-/* .site_name{
-    justify-content: flex-start;
-    padding-bottom: 5px;
-    padding-left: 12px;
-} */
+.site_name{
+    text-align: center;
+    padding-bottom: 2%;
+}
 
 .nav_list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    background-color: #c7dcff;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    background-color: #fae478;
+    align-items: center;
 }
 
+/* used this website for the menu formatting: https://codepen.io/team/css-tricks/pen/YqaKYR */
+
 .nav_item, .current {
-    margin-right: 5px;
-    margin-left: 2px;
-    padding: 5px;
+    padding: 0.5%;
 }
 
 .skip {
@@ -55,22 +51,22 @@ a.skip:focus{
 }
 
 .nav_list a {
-    color: #0000b5;
+    color: #0000e0;
     text-decoration: none;
 }
 
 .nav_list a:visited{
-    color: #58007e;
+    color: #663399;
 }
 
 .nav_list a:hover{
-    color: #114c2a;
+    color: #005500;
 }
 
-.current{
+.current {
     text-transform: uppercase;
-    background-color: #fae478;
 }
+
 
 .banner_image{
     width: 100%;
@@ -88,11 +84,9 @@ a.skip:focus{
     background-color: #fae478;
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 5%;
+    position: sticky;
     padding-top: 1%;
-
+    bottom: 0;
 }
 
 
