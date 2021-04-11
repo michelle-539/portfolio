@@ -1,6 +1,10 @@
-
+html{
+    position: relative;
+    min-height: 100%;
+}
 body {
-    background-color: #c7dcff;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.863);
     font-family: "Roboto", Helvetica, sans-serif;
     font-size: 20px;
     color: #000000;
@@ -8,77 +12,82 @@ body {
     padding: 0;
 }
 
-.header{
-    background-color:#c7dcff;
-    display: flex;
-    flex-direction: column;
-}
-
-#main{
-    padding-bottom: 10px;
-}
-
-.site_name{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.2em;
-    line-height: 1.5;
-}
-
 .nav_list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #fae478;
-    align-items: center;
-    padding-bottom: 1.5px;
+    background-color: #262b46;
+    align-items: left;
+    line-height: 1.3;
 }
 
-/* used this website for the menu formatting: https://codepen.io/team/css-tricks/pen/YqaKYR */
 
-.nav_item, .current {
+.site_name {
+    color: rgb(228, 222, 222);
     padding: 3px;
+    text-align: center;
+    line-height: 2;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.nav_item{
+    padding: 3px;
+    text-align: center
+}
+
+.current {
+    text-transform: uppercase;
+    background-color: #bfbfbf;
+    text-align: center;
+    line-height: 2;
 }
 
 .skip {
-    background-color: #fae478;
+    background-color:#7bffff ;
     left: 0;
-    top: -50px;
+    top: -40px;
     position: absolute;
+    font-size: 0.9em;
 }
 
 a.skip:focus{
     top: 0;
     right: 0;
-    color: #2b2b2b;
+    color: black;
     text-decoration-style: solid;
     padding: 2px;
     position: relative;
 }
 
 .nav_list a {
-    color: #0000e0;
+    color: #c5eff7;
     text-decoration: none;
 }
 
 .nav_list a:visited{
-    color: #663399;
+    color: #dcc6e0;
 }
 
 .nav_list a:hover{
-    color: #005500;
     text-decoration: underline;
 }
 
-.current {
-    text-transform: uppercase;
-    background-color: white;
+.current a{
+    color:#000036;
 }
 
-.banner_image{
-    width: 100%;
-    height: auto;
+.current a:visited{
+    color: #3b0053;
+}
+
+.current a:hover{
+    text-decoration: underline;
+}
+
+#main{
+    padding-bottom: 10px;
+    
 }
 
 .text_w_image p{
@@ -91,16 +100,25 @@ a.skip:focus{
 .text_w_image img{
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
-.footer{
-    background-color: #fae478;
+#footer{
+    background-color: #262b46;
+    padding-bottom: 2px;
     text-align: center;
-    width: 100%;
-    padding-top: 1%;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    color: rgb(228, 222, 222);
 }
 
+.sticky{
+    height: auto;
+
+}
 .bio_container{
     display: grid;
     grid-template-columns: 1fr;
@@ -180,8 +198,8 @@ a.skip:focus{
     line-height: 1.4;
 }
 
-@media screen and (min-width: 800px){
-    .reading_container{
+@media screen and (min-width: 768px){
+    /* .reading_container{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -198,5 +216,37 @@ a.skip:focus{
 
     .bio_container img{
         width: 30vw;
+    } */
+
+    
+    .nav_list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 1;
     }
+
+    .nav_item {
+        line-height: 2;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .current{
+        text-align: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 2;
+        vertical-align: middle;
+    }
+
+
+    .text_w_image img{
+        box-sizing: border-box;
+        object-fit: cover;
+        border: 15px solid black;
+    }
+
+    
+
 }
