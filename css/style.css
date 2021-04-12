@@ -210,7 +210,6 @@ a.skip:focus{
     }
 
     .current{
-        text-align: none;
         padding-left: 10px;
         padding-right: 10px;
         line-height: 2;
