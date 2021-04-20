@@ -17,7 +17,7 @@
             <ul class="nav_list">
                 <li class="site_name">Disability Rights in the U.S.</li>
                 <li class="nav_item"><a href = "index.html">About</a></li>
-                <li class="nav_item"><a href = "history.html">History</a></li>
+                <li class="nav_item"><a href = "legislation.html">Legislation</a></li>
                 <li class="nav_item"><a href = "people.html">People</a></li>
                 <li class="nav_item"><a href = "resources.html">Resources</a></li>
                 <li class="current"><a href = "contact.html">Contact</a></li>
@@ -26,19 +26,21 @@
     </header>
 
     <main id="main">
-        <div class="contact_form_intro">    
+        <div class="contact_form_intro">
         <h1>Contact form</h1>
             <p>If you'd like to get in touch, please fill out this contact form!</p>
-        </div>
-
-            <form action="https://formspree.io/f/xjvjvzrz"
-                method="Post">
-                <label for="name">Name</label><br/>
-                <input type="text" id="name" name="name"><br/>
-                <label for="email">Email</label><br/>
-                <input type="email" id="email" name="email"><br/>
+        </div>    
+            <form action="https://formspree.io/f/xjvjvzrz" method="Post">
+                    <div class="contact_form_container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required><br/>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required><br/>
+                    <label for="message">Message</label>
+                    <textarea placeholder="Please type your message here..." id="message" name="message" maxlength="1000" required></textarea><br/>
 
                 <button type="submit">Submit</button>
+                </div>
             </form>
     </main>
 
