@@ -375,7 +375,11 @@ button[type=submit]{
         row-gap: 30px;
 }
 
-.bio_container div{
+.bio_container div,
+.bio_container div:hover,
+.bio_container div:focus-within,
+.bio_container div:active,
+.bio_container div:focus{
     height: 70vh;
     overflow: scroll;
 }
